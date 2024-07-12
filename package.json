@@ -14,7 +14,7 @@
     "build:laupui-v3": "gulp -f packages/components/script/build/index.js",
     "publish:laupui-v3": "gulp -f packages/components/script/publish/index.js",
     "build:laupui-v3-utils": "gulp -f packages/utils/script/build/index.js",
-    "publish:laupui-v3-utils": "gulp -f packages/utils/script/publish/index.js",
+    "publish:laupui-v3-utils": "gulp -f packages/utils/publish/index.js",
     "build-and-publish:laupui-v3": "npm run build:laupui-v3 && npm run publish:laupui-v3",
     "lint:eslint": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
     "lint:style": "stylelint --fix \"**/*.{css,scss}\"",
