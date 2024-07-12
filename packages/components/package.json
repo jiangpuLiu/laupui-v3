@@ -1,0 +1,14 @@
+{
+  "name": "@laupui-v3/components",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./index.js",
+  "packageName": "laupui-v3",
+  "type": "module",
+  "scripts": {
+    "build": "vite build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

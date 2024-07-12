@@ -1,0 +1,25 @@
+{
+  "name": "laupui-v3",
+  "version": "1.0.3",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "files": [
+    "es",
+    "lib"
+  ],
+  "keywords": [
+    "laupui-v3",
+    "vue3组件库"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "author": "LiuJiangPu",
+  "license": "MIT",
+  "description": "",
+  "typings": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jiangpuLiu/laupui-v3"
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "laupui-v3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,vue}": [
+      "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+      "stylelint --fix \"packages/components/src/**/*.{css,scss}\""
+    ]
+  },
+  "scripts": {
+    "build:laupui-v3": "gulp -f packages/components/script/build/index.js",
+    "publish:laupui-v3": "gulp -f packages/components/script/publish/index.js",
+    "build:laupui-v3-utils": "gulp -f packages/utils/script/build/index.js",
+    "publish:laupui-v3-utils": "gulp -f packages/utils/script/publish/index.js",
+    "build-and-publish:laupui-v3": "npm run build:laupui-v3 && npm run publish:laupui-v3",
+    "lint:eslint": "eslint --ext .js,.jsx,.vue,.ts,.tsx --fix --quiet ./",
+    "lint:style": "stylelint --fix \"**/*.{css,scss}\"",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/gulp": "^4.0.17",
+    "@types/gulp-autoprefixer": "^0.0.37",
+    "@types/gulp-sass": "^5.0.4",
+    "@types/node": "^20.14.10",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "@typescript-eslint/parser": "^5.54.0",
+    "@vitejs/plugin-vue": "^5.0.5",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-vue": "^9.27.0",
+    "gulp": "^5.0.0",
+    "gulp-autoprefixer": "8.0.0",
+    "gulp-sass": "^5.1.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^15.2.7",
+    "postcss-html": "^1.5.0",
+    "prettier": "^2.8.4",
+    "release-it": "^15.6.0",
+    "sass": "^1.77.7",
+    "stylelint": "^15.2.0",
+    "stylelint-config-prettier": "^9.0.5",
+    "stylelint-config-recess-order": "^4.0.0",
+    "stylelint-config-recommended-scss": "^14.1.0",
+    "stylelint-config-recommended-vue": "^1.4.0",
+    "stylelint-config-standard": "^30.0.1",
+    "stylelint-prettier": "^3.0.0",
+    "sucrase": "^3.35.0",
+    "typescript": "^4.9.5",
+    "vite": "^5.3.3",
+    "vue": "^3.4.31"
+  }
+}
