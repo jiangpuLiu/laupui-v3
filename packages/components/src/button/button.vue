@@ -6,7 +6,7 @@
 import './style/index.scss';
 import { computed } from 'vue';
 
-defineOptions({ name: 'nn-button' });
+defineOptions({ name: 'NnButton' });
 
 const props = defineProps({
   type: {
