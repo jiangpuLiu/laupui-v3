@@ -1,1 +1,1 @@
-export * from './lib/withInstall.js';
+export * from './util/withInstall.js';
